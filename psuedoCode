@@ -1,0 +1,14 @@
+//create trivia form
+    //write if/else statements for each question
+    //if question 1 = true etc
+    //else = wrong
+    //make sure player can only select one answer
+
+    //set countdown timer
+    //on(click) btn start
+    // click event
+    //on question 10(or whatever number question), timer stop
+    //return results
+    //if/else score output
+    //might need to do for each possible outcome
+    //replay button resets game

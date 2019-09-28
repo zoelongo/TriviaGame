@@ -1,0 +1,14 @@
+body {
+
+    background-color: darksalmon;
+    text-align: center;
+
+}
+
+.option {
+    border: 2px solid lightpink;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

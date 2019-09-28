@@ -1,0 +1,50 @@
+var questions = [
+    // each question will be represented by an object
+    {
+        question: "First question goes here",
+        answers: ["answer 1", "answer 2", "answer 3", "answer 4"],
+        correctAnswer: "answer 2"
+    },
+    {
+        question: "Second question goes here",
+        answers: ["answer 1", "answer 2", "answer 3", "answer 4"],
+        correctAnswer: "answer 2"
+    }
+]
+
+// for each question in your questions array:
+for (var i = 0; i < questions.length; i++) {
+    // create a questionWrapper div that will wrap around each question and its corresponding
+    // answer... this questionWrapper div will also have the 'data-correct-answer' attribute
+    // that will contain the (hidden) answer so you can compare the user's chosen answer to it
+    var questionWrapper = $("<div class='questionWrapper'>");
+
+    // "hiding" the correct answer on the questionWrapper for later retrieval
+    questionWrapper.attr("data-correct-answer", questions[i].correctAnswer);
+
+    // creating a paragraph to contain the question text
+    var question = $("<p>").text(questions[i].question);
+
+    // creating an unordered list to hold all the answers
+    var answers = $("<ol>");
+    // ACTION ITEM: write code to loop through questions[i].answers array... for each answer 
+    // in that array, create a <li class='answer'> and set the text as the current answer, then 
+    // append that new li to the answers ol above... also store the current answer
+    // as a 'data-correct-answer' attribute.
+
+    // after the HTML for both the question and the answers are built out, append both to
+    // the questionWrapper div
+    questionWrapper.append(question, answers);
+
+    // then append the questionWrapper to the page!
+    $("#maindivnamehere").append(questionWrapper);
+}
+
+// OTHER ACTION ITEMS:
+
+// 1) look into jQuery's .parents() method coupling with .attr() to help you grab the 
+// 'data-correct-answer' attribute from the questionWrapper div!
+
+// 2) when the user submits their quiz/answers all questions, compare the correct 
+// answer to the selected answer to figure out if they got that question right!
+
