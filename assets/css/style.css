@@ -1,14 +1,22 @@
 body {
-
-    background-color: darksalmon;
     text-align: center;
-
+    color: burlywood;
 }
+
+.jumbotron {
+    background-color: darkslateblue;
+    color: burlywood;
+}
+
 
 .option {
     border: 2px solid lightpink;
+    background-color:burlywood;
+    color: darkslateblue;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 

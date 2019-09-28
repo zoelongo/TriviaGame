@@ -1,4 +1,4 @@
-let counter = 5;
+let counter = 20;
 let currentQuestion = 0;
 let score = 0;
 let lost = 0;
@@ -36,7 +36,7 @@ function countDown () {
 }
 
 function loadQuestion () {
-    counter= 5;
+    counter= 20;
     timer= setInterval(countDown, 1000)
 
     const question = quizQuestions[currentQuestion].question;
@@ -47,6 +47,7 @@ function loadQuestion () {
     $("#game").html(`
         <h3>${question}</h3>
         ${loadOptions(options)}
+        ${remainingQuestions()}
     `);
 }
 
@@ -95,7 +96,7 @@ function displayResult() {
 
 $(document).on("click", "#reset", function(){
 
-    counter = 5;
+    counter = 20;
     currentQuestion = 0;
     score = 0;
     lost = 0;
@@ -105,4 +106,31 @@ $(document).on("click", "#reset", function(){
 
 });
 
-loadQuestion();
+function remainingQuestions() {
+    const remainingQuestions = quizQuestions.length - (currentQuestion + 1);
+    const totalQuestions = quizQuestions.length;
+
+    return `Remaining Questions:  ${remainingQuestions}/${totalQuestions}`;
+    
+}
+
+$("#start").on("click", function(){
+    $("#start").remove();
+    $("#time").html(counter);
+    loadQuestion();
+})
+
+// function loadGif(status){
+//     const correctAns = quizQuestions[currentQuestion].correctAns;
+
+//     if (status === "win"){
+//         $("#game").html(`
+//             <p class="loadGiphy">Congrats, you picked the correct answer!</p>
+//         `)
+//     } else {
+//         $("#game").html(`
+//             <p class="loadGiphy">Gosh, think much? You got this one wrong, bozo.</p>
+//             <p class="loadGiphy">The correct answer was ${correctAns}.</p>
+//         `)
+//     }
+// }

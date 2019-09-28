@@ -18,12 +18,12 @@ const quizQuestions = [
       },
       {
         question: "Which zodiac is represented by twins?",
-        options: ["Leo", "Gemini", "Sagitarius", "Virgo"],
+        options: ["Leo", "Gemini", "Sagittarius", "Virgo"],
         correctAns: "Gemini",
       },
       {
-        question: "What date range is Tarus season?",
-        options: ["March 15th to April 10th", "Febuary 22nd to March 21st", "May 22nd to June 20th", "April 20th to May 21st"],
+        question: "What date range is Taurus season?",
+        options: ["March 15th to April 10th", "February 22nd to March 21st", "May 22nd to June 20th", "April 20th to May 21st"],
         correctAns: "April 20th to May 21st",
       },
       {
@@ -42,3 +42,13 @@ const quizQuestions = [
         correctAns: "Compass",
       }
     ];
+
+// const winGif = [
+//   "../assets/images/giphywin2.gif",
+//   "../assets/images/giphywin3.gif",
+// ];
+
+// const loseGif = [
+//   "../assets/images/giphylose1.gif",
+//   "../assets/images/giphylose2.gif",
+// ];
