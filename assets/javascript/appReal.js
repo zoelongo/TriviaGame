@@ -1,4 +1,4 @@
-let counter = 3;
+let counter = 5;
 let currentQuestion = 0;
 let score = 0;
 let lost = 0;
@@ -10,7 +10,7 @@ function nextQuestion () {
     const noMoreQuestions = (quizQuestions.length - 1) === currentQuestion;
 
     if (noMoreQuestions) {
-        //TODO
+        displayResult();
         console.log("Game Over!");
     } else {
         currentQuestion++;
@@ -36,7 +36,7 @@ function countDown () {
 }
 
 function loadQuestion () {
-    counter= 3;
+    counter= 5;
     timer= setInterval(countDown, 1000)
 
     const question = quizQuestions[currentQuestion].question;
@@ -68,14 +68,41 @@ $(document).on("click", ".option", function(){
     if (correctAns === selectedAnswer) {
         //TODO
         score++;
-        console.log("Winner!")
+        console.log("Winner!");
+        nextQuestion();
     } else {
         lost++;
-        console.log("Loser!")
+        console.log("Loser!");
+        nextQuestion();
     }
 
     console.log("clicked: " + selectedAnswer);
 })
 
+function displayResult() {
+    const result = `
+        <p><ol>You answered ${score} questions correctly!</ol>
+        <ol>...and you answered ${lost} questions incorrectly</ol>
+        <ol>out of a total of ${quizQuestions.length} questions.</ol>
+        </p>
+        <button class"btn btn-primary" id="reset">Reset Game</button>
+        
+    `;
+
+    $("#game").html(result);
+
+}
+
+$(document).on("click", "#reset", function(){
+
+    counter = 5;
+    currentQuestion = 0;
+    score = 0;
+    lost = 0;
+    timer = null;
+
+    loadQuestion();
+
+});
 
 loadQuestion();
