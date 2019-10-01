@@ -82,7 +82,7 @@ $(document).on("click", ".option", function(){
 
 function displayResult() {
     const result = `
-        <p><ol>You answered ${score} questions correctly!</ol>
+        <p id="displayResult"><ol>You answered ${score} questions correctly!</ol>
         <ol>...and you answered ${lost} questions incorrectly</ol>
         <ol>out of a total of ${quizQuestions.length} questions.</ol>
         </p>

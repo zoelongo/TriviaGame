@@ -1,11 +1,13 @@
 body {
     text-align: center;
     color: burlywood;
+    cursor: url('./assets/images/curs'), auto;	
 }
 
 .jumbotron {
     background-color: darkslateblue;
     color: burlywood;
+    border: dotted 8px lightpink;
 }
 
 
@@ -16,7 +18,47 @@ body {
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
+.option:hover {
+    background-color: rgb(211, 153, 77);
+    border: 2px solid rgb(250, 136, 153);
+    color: rgb(52, 39, 138);
+}
 
+#reset {
+    background-color: burlywood;
+    color: darkslateblue;
+    border: 2px solid lightpink;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: rgb(211, 153, 77);
+    border: 2px solid rgb(250, 136, 153);
+    color: rgb(52, 39, 138);
+}
+
+#displayResult {
+    border: 4px lightpink;
+    color: burlywood;
+}
+
+#start {
+    background-color: burlywood;
+    color: darkslateblue;
+    border: 2px solid lightpink;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: rgb(211, 153, 77);
+    border: 2px solid rgb(250, 136, 153);
+    color: rgb(52, 39, 138);
+}
 
