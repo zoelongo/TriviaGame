@@ -14,7 +14,7 @@ const quizQuestions = [
       {
         question: "The astrologic calendar starts at a different time than our calendar. What is the first sign in the zodiac?",
         options: ["Aquarius", "Pisces", "Cancer", "Capricorn"],
-        correctAns: "Aquarius",
+        correctAns: "Capricorn",
       },
       {
         question: "Which zodiac is represented by twins?",
@@ -34,7 +34,7 @@ const quizQuestions = [
       {
         question: "Your cat was born on June 9th; what is his zodiac sign?",
         options: ["Cancer", "Leo", "Gemini", "Libra"],
-        correctAns: "Cancer",
+        correctAns: "Gemini",
       },
       {
         question: "Astrology is commonly compared to which device?",
