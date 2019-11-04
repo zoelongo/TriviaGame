@@ -44,6 +44,9 @@ function loadQuestion () {
 
     $("#time").html("Time Left: " + counter);
 
+    //remember to put remainingQuestions back below
+    
+
     $("#game").html(`
         <h3>${question}</h3>
         ${loadOptions(options)}
@@ -109,9 +112,7 @@ $(document).on("click", "#reset", function(){
 function remainingQuestions() {
     const remainingQuestions = quizQuestions.length - (currentQuestion + 1);
     const totalQuestions = quizQuestions.length;
-
-    return `Remaining Questions:  ${remainingQuestions}/${totalQuestions}`;
-    
+    return `Remaining Questions:  ${remainingQuestions}/${totalQuestions}`; 
 }
 
 $("#start").on("click", function(){
@@ -119,18 +120,3 @@ $("#start").on("click", function(){
     $("#time").html(counter);
     loadQuestion();
 })
-
-// function loadGif(status){
-//     const correctAns = quizQuestions[currentQuestion].correctAns;
-
-//     if (status === "win"){
-//         $("#game").html(`
-//             <p class="loadGiphy">Congrats, you picked the correct answer!</p>
-//         `)
-//     } else {
-//         $("#game").html(`
-//             <p class="loadGiphy">Gosh, think much? You got this one wrong, bozo.</p>
-//             <p class="loadGiphy">The correct answer was ${correctAns}.</p>
-//         `)
-//     }
-// }

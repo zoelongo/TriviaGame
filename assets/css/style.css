@@ -1,17 +1,33 @@
-body {
+body, html {
     text-align: center;
-    color: burlywood;	
+    font-family: 'Source Code Pro', monospace;
+    color: burlywood;
+    margin: 0px;
+    background: url('http://getwallpapers.com/wallpaper/full/d/4/8/510902.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
 }
 
 .jumbotron {
-    background-color: darkslateblue;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    margin-top: 25px;
+    background: linear-gradient(to bottom right, darkslateblue, lightpink);
     color: burlywood;
-    border: dotted 8px lightpink;
+    border: outset 8px lightpink;
 }
 
 
 .option {
-    border: 2px solid lightpink;
+    font-family: 'Source Code Pro', monospace;
+    border: 3px outset lightpink;
     background-color:burlywood;
     color: darkslateblue;
     padding: 10px;
@@ -27,10 +43,12 @@ body {
 }
 
 #reset {
+    font-family: 'Source Code Pro', monospace;
     background-color: burlywood;
     color: darkslateblue;
     border: 2px solid lightpink;
     padding: 10px;
+    margin-bottom: 15px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -47,6 +65,7 @@ body {
 }
 
 #start {
+    font-family: 'Source Code Pro', monospace;
     background-color: burlywood;
     color: darkslateblue;
     border: 2px solid lightpink;

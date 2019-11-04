@@ -43,12 +43,3 @@ const quizQuestions = [
       }
     ];
 
-// const winGif = [
-//   "../assets/images/giphywin2.gif",
-//   "../assets/images/giphywin3.gif",
-// ];
-
-// const loseGif = [
-//   "../assets/images/giphylose1.gif",
-//   "../assets/images/giphylose2.gif",
-// ];
