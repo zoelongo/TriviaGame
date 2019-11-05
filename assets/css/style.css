@@ -17,7 +17,7 @@ body, html {
 
 .jumbotron {
     font-family: 'Source Code Pro', monospace;
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 25px;
     background: linear-gradient(to bottom right, darkslateblue, lightpink);
     color: burlywood;
@@ -28,7 +28,7 @@ body, html {
 .option {
     font-family: 'Source Code Pro', monospace;
     border: 3px outset lightpink;
-    background-color:burlywood;
+    background:linear-gradient(to bottom right, burlywood, lightpink);
     color: darkslateblue;
     padding: 10px;
     border-radius: 4px;
